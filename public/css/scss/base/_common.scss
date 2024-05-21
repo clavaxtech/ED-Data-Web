@@ -1,0 +1,327 @@
+.userIcon {
+    $size: 5rem;
+    width: $size;
+    height: $size;
+    @include prefix(border-radius, 50%, moz webkit ms);
+    background-color: $img-placholder-bg;
+    margin-bottom: 0;
+
+    img {
+        @include prefix(border-radius, 50%, moz webkit ms);
+    }
+}
+
+.cardboard {
+    background: $white;
+    @include prefix(border-radius, 0.4rem, moz webkit ms);
+}
+
+.minheight {
+    min-height: auto !important;
+}
+
+.list-items {
+    li {
+        position: relative;
+        padding: 0 0 1.5rem 1.5rem;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 8px;
+            content: '';
+            $size: 0.7rem;
+            width: $size;
+            height: $size;
+            background: #C8B8B8;
+            @include prefix(border-radius, 50%, moz webkit ms);
+        }
+    }
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+
+.selectInputdropDown {
+    &.is-open {
+        .select-btn {
+            &:after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .select-btn {
+        display: flex;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        position: relative;
+        background: #293842;
+        color: #696B6C;
+        font-size: $small-font-size;
+        border: none;
+        height: 3.2rem;
+        padding: 0.5rem 1.2rem;
+        width: 100%;
+        text-align: left;
+        @include prefix(border-radius, 0.5rem, moz webkit ms);
+        
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 36px;
+            @include prefix(border-radius, 0 12px 12px 0, moz webkit ms);
+            background: #293842 url(../images/white-down-arrow.svg) no-repeat center center;
+            pointer-events: none;
+        }
+
+        .tag {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 6px;
+            height: 19px;
+            margin-right: 0.5rem;
+            color: $white;
+            font-size: 1rem;
+            background: #486374;
+            @include prefix(border-radius, 5px, moz webkit ms);
+
+            small {
+                margin-left: 1rem;
+                display: inline-block;
+            }
+        }
+    }
+
+    .selectdropdown {
+        top: 0.6rem;
+        .react-select-dropdown__control {
+            background-color: #344A61;
+            color: $white ;
+            flex-direction: row-reverse;
+            border: none;
+
+            .react-select-dropdown__value-container {
+                .react-select-dropdown__placeholder {
+                    color: $white;
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                }
+            }
+            .react-select-dropdown__indicators {
+                padding-left: 0.8rem;
+            }
+        }
+
+        .react-select-dropdown__menu {
+            margin: 0;
+            background-color: #486374;
+            @include prefix(border-radius, 0 0 0.5rem 0.5rem, moz webkit ms);
+
+            .react-select-dropdown__menu-list {
+                .react-select-dropdown__option {
+                    color: $white;
+                    font-size: $small-font-size;
+                    line-height: 3rem;
+                    background-color: transparent;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #637990;
+                    }
+                    &.react-select-dropdown__option--is-selected {
+                        background:#637990 url(../images/check.svg) no-repeat 98% center;
+                    }
+
+                    label {
+                        display: block;
+                        color: $white;
+                        font-size: $small-font-size;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.selectInput {
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 5rem;
+        @include prefix(border-radius, 0 12px 12px 0, moz webkit ms);
+        background: url(../images/down-arrow-white.png) no-repeat center center;
+        pointer-events: none;
+    }
+    select {
+        background: transparent;
+        color: #D7D7D7;
+        font-size: $small-font-size;
+        border: solid 1px #486374;
+        height: 4.2rem;
+        padding: 0.5rem 5rem 0.5rem 1.2rem;
+        width: 100%;
+        text-align: left;
+        @include prefix(border-radius, 0.5rem, moz webkit ms);
+        appearance: none;
+
+       
+    }
+
+    
+}
+.line {
+    background-color: #7492AC;
+    height: 1px;
+    margin: 1.5rem 0 2.5rem 0;
+}  
+
+.react-datepicker__navigation--years-upcoming {
+    &::after {
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: '';
+        width: 0; 
+        height: 0; 
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;        
+        border-bottom: 5px solid #fff;
+    }
+}
+.react-datepicker__navigation--years-previous {
+    &::after {
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: '';
+        width: 0; 
+        height: 0; 
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;        
+        border-top: 5px solid #fff;
+    }
+}
+.react-datepicker__navigation-icon {
+    font-size: 12px!important;
+    top: 0!important;
+}
+.react-datepicker__navigation {
+    width: 24px!important;
+    height: 18px!important;
+}
+.react-datepicker__year-read-view--down-arrow, .react-datepicker__month-read-view--down-arrow, .react-datepicker__month-year-read-view--down-arrow, .react-datepicker__navigation-icon::before {
+    border-width: 2px 2px 0 0!important;
+    color: #333!important;
+    width: 6px!important;
+    height: 6px!important;
+}
+
+
+.react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name {
+    color: #fff!important;
+}
+.react-datepicker__month-container {
+    background: #131B21;
+}
+.react-datepicker__header__dropdown {
+    color: #fff!important;
+}
+.react-datepicker__header {
+    background: #131B21!important;
+}
+.react-datepicker__current-month {
+    color: #fff!important;
+}
+.react-datepicker__day-name {
+    color: #fff !important;
+}
+.react-datepicker__day--disabled, .react-datepicker__month-text--disabled, .react-datepicker__quarter-text--disabled, .react-datepicker__year-text--disabled {
+    color: #999090!important;
+}
+.react-datepicker__year-dropdown, .react-datepicker__month-dropdown, .react-datepicker__month-year-dropdown {
+   background-color: #131B21!important;
+}
+.react-datepicker__year-option:hover, .react-datepicker__month-option:hover, .react-datepicker__month-year-option:hover {
+    color: #131B21!important;
+}
+.react-datepicker__day:hover, .react-datepicker__month-text:hover, .react-datepicker__quarter-text:hover, .react-datepicker__year-text:hover {
+    color: #ccc!important;
+} 
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #263945;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #1B2730;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #16A15E;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #16A15E;
+  }
+  
+  input:checked + .slider:before {
+    background-color: #fff;
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

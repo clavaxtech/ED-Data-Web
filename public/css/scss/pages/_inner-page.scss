@@ -1,0 +1,23 @@
+.mid-content {
+    padding: 3rem 0 7rem 0;
+}
+
+.page-card {
+    padding: 5rem;
+    background: $white;
+    margin-bottom: 0.7rem;
+    @include prefix(border-radius, 1.2rem, moz webkit ms);
+    @include prefix(box-shadow, 0.2rem 0.2rem 1rem rgba($color: $black, $alpha: 0.02), moz webkit ms);
+
+    @media (max-width:$tablet) {
+        padding: 3rem 1.5rem;
+    }
+    h4 {
+        font-weight: $weight-extrabold;
+        font-size: $large-font-size;
+        margin-bottom: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

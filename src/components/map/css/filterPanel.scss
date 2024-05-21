@@ -1,0 +1,58 @@
+.filterPanel {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    background-color: black;
+    width: 350px;
+    max-height: 80vh;
+    scrollbar-width: thin;
+    scrollbar-color: #343434 #cecece;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    &::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.75);
+    }
+}
+
+.filterPanelTitleBar {
+    background-color: black;
+    color: white;
+    padding-top: 6px;
+    font-weight: bold;
+    height: 32px;
+    text-align: center;
+    user-select: none;
+}
+
+.filterButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: auto!important;
+}
+
+.filterPanelSeparator {
+    background-color: grey;
+    height: 2px;
+}
+
+.filterListItem {
+    align-items: center;
+    display: flex;
+    padding: 3px;
+}
+
+.filterListItem:hover {
+    cursor: pointer;
+    background-color: #cfb1b192;
+}

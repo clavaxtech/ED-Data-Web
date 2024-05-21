@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is
+	font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+}
+
+body {
+    padding: 0;
+	box-sizing: border-box;
+	background-color: $body-bg-color;
+	padding-right: 0 !important; 
+}
+
+
+#root {
+    //padding-top: 6rem;
+}
+
+::selection {
+    color: $white;
+    background-color: $primary;
+}
+
+img { max-width:100%; }
+
+a {
+	color: $primary;
+	text-decoration:none;
+	outline: none;
+
+	//@include css3Transition(400ms);
+	
+	&:hover {
+		color: $primary;
+		text-decoration:none;
+	}
+}
+
+.link {
+	color: $primary;
+}
+
+hr {
+	margin: 2rem 0;
+	border-color: #cacaca;
+
+	&.darkBorder {
+		border-color: #999;
+	}
+
+	&.extraSpace {
+		margin: 4rem 0;
+	}
+}
+
+// Hide HTML5 Up and Down arrows
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+ul {
+	list-style: none;
+}
+
+#container-circles{
+    display: none;
+}
+
+.mode-camera{
+	margin-top: 100%;
+}

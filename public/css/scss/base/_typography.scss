@@ -1,0 +1,135 @@
+body {
+	font-family: $font-primary;
+	font-size: $default-font-size;
+	color: $default-text-color;
+	font-weight: $weight-regular; 
+	overflow-x: hidden;
+}
+
+
+
+
+h1, h2, h3, h4 {
+	font-family: $font-primary;
+	margin:0 0 1rem 0;
+	line-height: 1.3;
+	color: $heading-color;
+	font-weight: $weight-bold;
+}
+
+
+h1 { 
+	font-size: 4rem; 
+}
+
+h2 { 
+	font-size: 3.6rem; 
+	@media(max-width:$mobileBig) {
+		font-size: 3rem;
+	}
+}
+
+h3 { 
+	font-size: 2.4rem; 
+	@media(max-width:$mobileBig) {
+		font-size: 2rem;
+	}
+}
+
+h4 { 
+	font-size: 1.8rem; 
+	@media(max-width:$mobileBig) {
+		font-size: 1.6rem;
+	}
+}
+
+h5 { 
+	font-size: 1.6rem; 
+}
+
+p {
+	font-size: $default-font-size;
+	color: $default-text-color;
+	line-height: 1.4;
+	margin-bottom: 1rem;
+	
+	&.nmb { margin-bottom: 0; }
+	&.big { font-size: 1.8rem; }
+	&.white { color:#fff; }
+}
+
+ul {
+	margin:0;
+	padding:0;
+}
+
+
+.size11 {font-size: 11px !important;}
+.size12 {font-size: 12px !important;}
+.size13 {font-size: 13px !important;}
+.size14 {font-size: 14px !important;}
+.size15 {font-size: 15px !important;}
+.size16 {font-size: 16px !important;}
+.size18 {font-size: 18px !important;}
+
+
+.text-dark {
+	color: $heading-color !important;
+}
+.text-success {
+	color: $success !important;
+}
+.text-danger {
+	color: $error !important;
+}
+.text-primary {
+	color: $primary !important;
+}
+.text-black {
+	color: $black !important;
+}
+
+.text-default {
+	color: $default-text-color !important;
+}
+
+
+// font-weight
+.font-light {
+	font-family: $font-primary !important;
+	font-weight: $weight-light!important;
+}
+.font-regular {
+	font-family: $font-primary !important;
+	font-weight: $weight-regular!important;
+}
+.font-semibold {
+	font-weight: $weight-semibold !important;
+}
+.font-bold {
+	font-family: $font-primary !important;
+	font-weight: $weight-bold !important;
+}
+.font-extrabold {
+	font-family: $font-primary !important;
+	font-weight: $weight-extrabold !important;
+}
+.font-black {
+	font-family: $font-primary !important;
+	font-weight: $weight-black !important;
+}
+
+
+
+
+
+
+
+.text-underline {
+	text-decoration: underline;
+}
+
+.lineHeight_1 {
+	line-height: 1;
+}
+

@@ -1,0 +1,169 @@
+@mixin prefix($property, $value, $prefixes) {
+	@each $prefix in $prefixes {
+		-#{$prefix}-#{$property}: $value;
+	}
+	#{$property}: $value;
+}
+
+@mixin cardShadow() {
+	@include prefix(box-shadow, 0 0.2rem 1.5rem rgba($black, 0.06), moz webkit ms); 
+}
+
+@mixin btnShadow() {
+	@include prefix(box-shadow, 0 0.6rem 0.6rem rgba($black, 0.16), moz webkit ms); 
+}
+@mixin btnMainShadow() {
+	@include prefix(box-shadow, 0 0.6rem 2rem rgba(#1F54C3, 0.15), moz webkit ms); 
+}
+
+@mixin inpShadow() {
+	@include prefix(box-shadow, 0 0.6rem 1.6rem rgba(#1F54C3, 0.15), moz webkit ms); 
+}
+
+@mixin shadowNone() {
+	@include prefix(box-shadow, none, moz webkit ms); 
+}
+
+
+@mixin cardboard {
+	background-color: $white;
+    @include prefix(border-radius, 1.2rem, moz webkit ms);
+    @include cardShadow;
+}
+
+@mixin contentOjc {
+	content: "";
+	position: absolute;
+}
+
+@mixin absolute {
+	position: absolute;
+	left: 0;
+	top:0;
+}
+
+@mixin contentOjc_lr0 {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+@mixin bgOverlay {
+	width: 100%;
+	height: 100%;
+	@include contentOjc_lr0;
+	background-color: rgba($color: $black, $alpha: 0.88);
+}
+
+@mixin flexContenCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flexContenCenterInline {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flexVcBetween {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin flexBetween {
+	display: flex;
+	justify-content: space-between;
+}
+
+@mixin centerXOnly {
+	position: absolute;
+	left: 50%;
+	@include prefix(transform, translateX(-50%), moz webkit ms);
+}
+@mixin centerXY {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	@include prefix(transform, translate(-50%, -50%), moz webkit ms);
+}
+
+@mixin cardWhite {
+	background-color: $white;
+	@include prefix(border-radius, 1rem, moz webkit ms);
+}
+
+@mixin textEllipsis {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+@mixin noBdrBgOline {
+	border: none;
+	background: none;
+	outline: none;
+}
+
+@mixin visibilityOpacityHide {
+	visibility: hidden;
+	opacity: 0;
+	@include prefix(transition, 0.4s, moz webkit ms);
+}
+@mixin visibilityOpacityShow {
+	visibility: visible;
+	opacity: 1;
+}
+
+@mixin circleImg {
+	@include prefix(border-radius, 50%, moz webkit ms);
+	width: 100%;
+	height: 100%;
+}
+
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content;
+	}
+	&:-moz-placeholder {
+		@content;
+	}
+	&::-moz-placeholder {
+		@content;
+	}
+	&:-ms-input-placeholder {
+		@content;
+	}
+}
+
+@mixin centerImg {
+	max-width: inherit;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	@include prefix(transform, translate(-50%, -50%), moz webkit ms);
+}
+
+
+
+@mixin tagBottomTip {
+	@include contentOjc;
+	left: 50%;
+	@include prefix(transform, translateX(-50%), moz webkit ms);
+	border-left: .9rem solid transparent;
+	border-right: .9rem solid transparent;
+	border-top: 1.4rem solid $secondary;
+}
+
+
+@mixin cardBottomTip {
+	@include contentOjc;
+	left: 50%;
+	@include prefix(transform, translateX(-50%), moz webkit ms);
+	border-left: .6rem solid transparent;
+	border-right: .6rem solid transparent;
+	border-top: 0.8rem solid $white;
+}

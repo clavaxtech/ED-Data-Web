@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103.445" height="62.067" viewBox="0 0 103.445 62.067">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.076" stop-color="#436731"/>
+      <stop offset="0.142" stop-color="#527634"/>
+      <stop offset="0.265" stop-color="#698f3b"/>
+      <stop offset="0.379" stop-color="#789d3e"/>
+      <stop offset="0.474" stop-color="#7da340"/>
+      <stop offset="0.484" stop-color="#282a73"/>
+      <stop offset="0.545" stop-color="#282e76"/>
+      <stop offset="0.611" stop-color="#2b3b82"/>
+      <stop offset="0.679" stop-color="#2f5195"/>
+      <stop offset="0.749" stop-color="#356fb0"/>
+      <stop offset="0.815" stop-color="#3d93d0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7da340"/>
+      <stop offset="0.357" stop-color="#679d70"/>
+      <stop offset="1" stop-color="#3d93d0"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_22650" data-name="Group 22650" transform="translate(-5913 -580)">
+    <path id="Path_79114" data-name="Path 79114" d="M0,0H40.892l7.957,10.344H19.893L35.808,31.033,19.893,51.722H48.849L40.892,62.067H0L23.872,31.033ZM50.661,0l7.957,10.344H75.2L91.111,31.033,75.2,51.722H58.619L50.661,62.067H79.308l24.137-31.033L79.308,0Z" transform="translate(5913 580)" fill="url(#linear-gradient)"/>
+    <path id="Path_79115" data-name="Path 79115" d="M37.068,18.315h33.21L80.17,31.033,70.277,43.752H37.068l9.784-12.719Z" transform="translate(5913 580)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

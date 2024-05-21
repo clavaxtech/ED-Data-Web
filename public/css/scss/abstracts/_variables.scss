@@ -1,0 +1,121 @@
+// COLORS
+$primary                        : #2585C6;
+$primary-light                  : #5797C1;
+$primary-dark                   : #243542;
+
+$secondary                      : #202020;
+$secondary-medium               : #99BBFF;
+$secondary-light                : #DCE6FF;
+
+$tertiary                       : #FF7C81;
+
+$dark                           : #243B6B;
+$grey                           : #F2F5F6;
+$success                        : #60bc50; 
+$error                          : #FF7C81;
+
+$white                          : #fff;
+$black                          : #000;
+$link                           : #5983F0;
+$green                          : #16A15E;
+
+$body-bg-color                  : #101215;
+
+
+$img-placholder-bg              : #f0f3f8;
+
+// Typography colors
+$heading-color                  : #202020;
+$default-text-color             : #202020;
+
+
+
+$iconBgColor                    : #EDEDED;
+
+
+// widths
+
+
+// Status
+$online                         : $secondary;
+$away                           : #FCAD7A;
+$busy                           : red;
+
+
+
+// FONT FAMILY
+$font-primary            : 'Open Sans', sans-serif;
+$font-secondary          : 'Inter', sans-serif;
+$font-roboto             : 'Roboto', sans-serif;
+
+
+
+// FONT SIZES
+$tiny-font-size                 : 1.2rem;
+$small-font-size                : 1.4rem;
+$default-font-size              : 1.6rem; 
+$medium-font-size               : 1.8rem; 
+$large-font-size                : 2rem;
+$big-font-size                  : 2.2rem;
+
+// FONT WEIGHT
+$weight-light                   : 300;
+$weight-regular                 : 400;
+$weight-medium                  : 500;
+$weight-semibold                : 600;
+$weight-bold                    : 700;
+$weight-extrabold               : 800;
+$weight-black                   : 900;
+
+// GRID
+$grid-width                     : 114rem;
+$gutter-vertical                : 8rem;
+$gutter-horizontal              : 6rem;
+$gutter-horizontal-1            : 1rem;
+$gutter-horizontal-2            : 2rem;
+$gutter-horizontal-4            : 4rem; 
+
+$gutter-vertical-small          : 6rem;
+$gutter-vertical-2              : 2rem;
+
+
+
+$scrollbarWidth                 : 0.4rem;
+$scrollbar-thumb                : $primary;
+
+
+// Viewports
+$desktop_xxl	:	1600px;
+$desktop_xl		:	1440px;
+$laptop			:	1366px;
+$desktop		:	1200px;
+$desktopMedium	:   1199px; 
+$desktopSmall	:	1024px;
+$tablet			:	992px;
+$iPhoneX		:	812px;
+$tabletSmall	:	768px;
+$mobileBig		:	767px;
+$mobileMed		:	600px;
+$mobile			:	480px;
+$mobileSmall	:	375px;
+$mobileExSmall	:	320px;
+
+
+
+// Rotate
+$mobileSmallRotate          : 480px;
+$iphone6_7                    : 750px;
+$iphoneXRotate              : 375px;
+
+
+//Form
+$input-border-color         :#dcd9d9;
+
+
+// Line-Heights
+$lineHeight_1half           :1.2;
+
+
+// Paths
+$primary-font-path          : "../webfonts";
+$base-image-path            : "../images";

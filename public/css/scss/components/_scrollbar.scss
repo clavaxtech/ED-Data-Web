@@ -1,0 +1,170 @@
+.scrollSection {
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    scrollbar-color: #2585c6 #1b2730;
+    scrollbar-width: thin;
+    overscroll-behavior: contain;
+
+    &.unset {
+        scroll-behavior: unset;
+    }
+
+    &::-webkit-scrollbar-track {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.1);
+        @include prefix(border-radius, 0.6rem, moz webkit ms);
+    }
+
+    &::-webkit-scrollbar {
+        width: $scrollbarWidth;
+        background-color: rgba(0, 0, 0, 0.1);
+        @include prefix(border-radius, 0.6rem, moz webkit ms);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $scrollbar-thumb;
+        @include prefix(border-radius, 0.6rem, moz webkit ms);
+    }
+
+    &::-ms-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0.1);
+        @include prefix(border-radius, 0.6rem, moz webkit ms);
+    }
+
+    &::-ms-scrollbar {
+        width: $scrollbarWidth;
+        background-color: rgba(0, 0, 0, 0.1);
+        @include prefix(border-radius, 0.6rem, moz webkit ms);
+    }
+
+    &::-ms-scrollbar-thumb {
+        background: $scrollbar-thumb;
+        @include prefix(border-radius, 0.6rem, moz webkit ms);
+    }
+
+    &:hover {
+        &::-webkit-scrollbar-thumb {
+            background: $primary;
+            cursor: pointer;
+        }
+
+        &::-ms-scrollbar-thumb {
+            background: $primary;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+.react-select-dropdown__menu-list {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    scrollbar-width: 5px;
+    scrollbar-color: #4F738A #9EC1D7;
+
+    &.unset {
+        scroll-behavior: unset;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0.1);
+        @include prefix(border-radius, 0.6rem, moz webkit ms);
+    }
+
+    &::-webkit-scrollbar {
+        width: $scrollbarWidth;
+        background-color: rgba(0, 0, 0, 0.1);
+        @include prefix(border-radius, 0.6rem, moz webkit ms);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $scrollbar-thumb;
+        @include prefix(border-radius, 0.6rem, moz webkit ms);
+    }
+
+    &::-ms-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0.1);
+        @include prefix(border-radius, 0.6rem, moz webkit ms);
+    }
+
+    &::-ms-scrollbar {
+        width: $scrollbarWidth;
+        background-color: rgba(0, 0, 0, 0.1);
+        @include prefix(border-radius, 0.6rem, moz webkit ms);
+    }
+
+    &::-ms-scrollbar-thumb {
+        background: $scrollbar-thumb;
+        @include prefix(border-radius, 0.6rem, moz webkit ms);
+    }
+
+    &:hover {
+        &::-webkit-scrollbar-thumb {
+            background: $primary;
+        }
+
+        &::-ms-scrollbar-thumb {
+            background: $primary;
+        }
+    }
+}
+
+.horizontalScroll {
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scrollbar-color: #2585c6 #1b2730;
+    scrollbar-width: thin;
+    overscroll-behavior: contain;
+
+    &.unset {
+        scroll-behavior: unset;
+    }
+
+    &::-webkit-scrollbar-track {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.1);
+        @include prefix(border-radius, 0.6rem, moz webkit ms);
+    }
+
+    &::-webkit-scrollbar {
+        width: $scrollbarWidth;
+        background-color: rgba(0, 0, 0, 0.1);
+        @include prefix(border-radius, 0.6rem, moz webkit ms);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $scrollbar-thumb;
+        @include prefix(border-radius, 0.6rem, moz webkit ms);
+    }
+
+    &::-ms-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0.1);
+        @include prefix(border-radius, 0.6rem, moz webkit ms);
+    }
+
+    &::-ms-scrollbar {
+        width: $scrollbarWidth;
+        background-color: rgba(0, 0, 0, 0.1);
+        @include prefix(border-radius, 0.6rem, moz webkit ms);
+    }
+
+    &::-ms-scrollbar-thumb {
+        background: $scrollbar-thumb;
+        @include prefix(border-radius, 0.6rem, moz webkit ms);
+    }
+
+    &:hover {
+        &::-webkit-scrollbar-thumb {
+            background: $primary;
+            cursor: pointer;
+        }
+
+        &::-ms-scrollbar-thumb {
+            background: $primary;
+            cursor: pointer;
+        }
+    }
+}

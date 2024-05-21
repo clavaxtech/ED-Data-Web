@@ -1,0 +1,44 @@
+.paginationWrapper {
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        .page-item {
+            margin-left: .5rem;
+            margin-right: .5rem;
+            .page-link {
+                background-color: $white;
+                color: #abafb3;
+                font-size: $small-font-size;
+                font-family: $font-primary;
+                @include prefix(border-radius, 50%, moz webkit ms);
+                @include prefix(transition, 0.3s, moz webkit ms);
+                @include prefix(box-shadow, 0 3px 10px rgba($black, 0.1), moz webkit ms);
+                width: 3.8rem;
+                height: 3.8rem;
+                @include flexContenCenter;
+                line-height: normal;
+            }
+            &:hover {
+                .page-link {
+                    color: $black;
+                }
+            }
+            &.active {
+                .page-link {
+                    background-color: $primary;
+                    color: $white;
+                    border-color: $primary; 
+                }
+            }
+
+            &.disabled {
+                .page-link {
+                    color: #abafb3;
+                    pointer-events: none;
+                    cursor: auto;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}

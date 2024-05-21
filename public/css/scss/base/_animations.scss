@@ -1,0 +1,92 @@
+// Default Loading ANIMATION KEYFRAMES
+@keyframes loading {
+    0% { transform: translateX(0) }
+    // 50% { transform: translateX(450%) }
+    100% { transform: translateX(1200%) }
+}
+
+// Stack ANIMATION KEYFRAMES
+@keyframes stackSlide {
+    from { right: -100%; }
+    to { right: 0; }
+}
+
+// Menu ANIMATION KEYFRAMES
+@keyframes SlideMenu {
+    from { left: -100%; }
+    to { left: 0; }
+}
+
+@keyframes moveDown {
+    0% { transform: translateY(-100%) }
+    100% { transform: translateY(0) }
+}
+@keyframes moveUp {
+    0% { transform: translateY(100%) }
+    100% { transform: translateY(0) }
+}
+
+
+
+
+@keyframes ripple {
+  from {
+    opacity: 1;
+    transform: scale3d(1.1,1.1,1);
+  }
+  
+  to {
+    opacity: 0;
+    transform: scale3d(1.5,1.5,1);
+  }
+}
+
+
+
+
+@mixin keyframes($animation-name) {
+	@-webkit-keyframes #{$animation-name} {
+		@content;
+	}
+	@-moz-keyframes #{$animation-name} {
+		@content;
+	}
+	@-ms-keyframes #{$animation-name} {
+		@content;
+	}
+	@-o-keyframes #{$animation-name} {
+		@content;
+	}
+	@keyframes #{$animation-name} {
+		@content;
+	}
+}
+
+
+
+
+
+@-webkit-keyframes scrolldown {
+	0% { 
+		-webkit-transform:rotate(0deg);
+	}
+	50% {
+		-webkit-transform:translate3d(0, 10px, 0) rotate(0deg);
+	}
+	100% { 
+		-webkit-transform:rotate(0deg);
+	}
+}
+
+
+@-moz-keyframes scrolldown {
+	0% {
+		-moz-transform:rotate(0deg);
+	}
+	50% {
+		-moz-transform:translate3d(0, 10px, 0) rotate(0deg);
+	}
+	100% {
+		-moz-transform:rotate(0deg);
+	}
+}

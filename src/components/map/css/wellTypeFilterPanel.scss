@@ -1,0 +1,76 @@
+.wellTypeFilterList {
+    white-space: nowrap;
+    columns: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    margin: 5px;
+}
+
+.wellTypeFilterListItem {
+    color: white;
+    align-items: center;
+    break-inside: avoid-column;
+    display: flex;
+    padding: 2px;
+    height: 25px;
+    &.itemDisabled {
+        opacity: 0.2;
+    }
+}
+
+.wellTypeFilterListItem:hover {
+    cursor: pointer;
+    background-color: #e6e6e665;
+}
+
+.wellTypeIcon {
+    height: 14px;
+    margin: 2px;
+    width: 14px;
+}
+
+.wellTypeLabel {
+    height: 14px;
+    font-size: 13px;
+}
+
+.subHeaderContainer {
+    .featureTypesWrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+        margin-bottom: 6px;
+
+        .title {
+            flex: 1;
+            margin-left: 5px;
+            font-size: 13px;
+        }
+    }
+    .wellTypeFilters {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 6px;
+        margin-bottom: -7px;
+        padding-top: 3px;
+        border-top: 1px solid lightgray;
+
+        .title {
+            font-weight: 600;
+            flex: 1;
+            margin-left: 10px;
+            font-size: 13px;
+            padding-top: 6px;
+        }
+        
+        .selbutton {
+            padding: 5px;
+            opacity: 0.6;
+        }
+        .selbutton:hover {
+            cursor: pointer;
+            background-color: #e6e6e6;
+        }
+    }
+}

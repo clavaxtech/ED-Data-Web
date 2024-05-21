@@ -1,0 +1,60 @@
+.nav {
+    &.nav-tabs {
+        &.default {
+            border: none;
+            display: flex;
+            justify-content: center;
+            .nav-item {
+                .nav-link {
+                    color: #171717;
+                    font-size: 1.8rem;
+                    margin-bottom: 0;
+                    border: transparent solid 1px;
+                    font-family: $font-primary;
+                    text-transform: uppercase;
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+
+                    &.active {
+                        border: $primary solid 1px;
+                        background: $primary-light;
+                        @include prefix(border-radius, 0.3rem, moz webkit ms);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.accordion {
+    .accordion-item {
+        margin-bottom: 1rem;
+        border: none;
+        .accordion-header {
+            .accordion-button {
+                font-size: $default-font-size;
+                font-weight: $weight-bold;
+                outline: none;
+                @include shadowNone;
+                padding: 1.2rem 1.5rem;
+                &:not(.collapsed) {
+                    background-color: $white;
+                    color: $heading-color;
+                }
+            }
+        }
+        .accordion-collapse {
+            .accordion-body {
+                padding: 3rem;
+                background-color: #EFF7FF;
+                border: #E2E0E0 solid 1px;
+                border-top: none;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+

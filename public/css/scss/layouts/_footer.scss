@@ -1,0 +1,47 @@
+.main-footer {
+    background: $white;
+    position: relative;
+    .container {
+        max-width: 100%;
+        padding: 0 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width:$mobile) {
+            padding: 0;
+            height: auto;
+        }
+        .footerLink {
+            @media (max-width:$mobile) {
+                width: 100%;
+            }
+            ul {
+                display: flex;
+                @media (max-width:$mobile) {
+                    display: block;
+                    text-align: center;
+                }
+                li {
+                    line-height: 5rem;
+                    @media (max-width:$mobile) {
+                        display: inline-block;
+                    }
+                    a {
+                        display: block;
+                        padding: 0 1rem;
+                        @media (max-width:$mobile) {
+                            font-size: $small-font-size;
+                            padding: 0 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+
+
+
+

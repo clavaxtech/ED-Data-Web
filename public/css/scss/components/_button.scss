@@ -1,0 +1,433 @@
+// Buttons
+.btn {
+	display: inline-block;
+	font-family: $font-primary;
+	line-height: 1;
+	font-size: $default-font-size;
+	padding: 0 2.5rem;
+	line-height: 5.6rem;
+	@include prefix(border-radius, 0.5rem, moz webkit ms);
+	@include prefix(transition, 400ms, moz webkit ms);
+	@include btnMainShadow;
+	position: relative;
+	cursor: pointer;
+	@media (max-width:$desktop-xl) {
+		line-height: 4.2rem;
+	}
+	// Rounded
+	&.elipse {
+		@include prefix(border-radius, 25px, moz webkit ms);
+	}
+	&.rounded-4 {
+		@include prefix(border-radius, 4px, moz webkit ms);
+	}
+	&.rounded-5 {
+		@include prefix(border-radius, 5px, moz webkit ms);
+	}
+
+	&.btn-w-25 {
+		min-width: 25rem;
+		position: relative;
+	}
+	
+
+	// Buttons Sizes
+	&.btn-xss {
+		font-size: 1.2rem;
+		padding: 0.4rem 1rem;
+	}
+	&.btn-xs {
+		font-size: 1.3rem;
+		padding: 0.8rem 1.5rem;
+	}
+	&.btn-sm {
+		font-size: 1.4rem;
+		padding: 1.2rem 2rem;
+	}
+	&.btn-md {
+		font-size: 1.6rem;
+		padding: 1.3rem 3rem;
+	}
+	
+	&.btn-lg {
+		font-size: 1.8rem;
+		padding: 1.5rem 4.5rem;
+		font-weight: $weight-bold;
+	}
+	&.btn-long {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+
+	&.btn-m {
+		@media (max-width:$mobile) {
+			font-size: 1.3rem;
+			padding: 0.8rem 1.5rem;
+		}
+	}
+
+	&.btn-full{
+		width: 100%;
+	}
+
+	&.btn-primary {
+		background-color: $primary;
+		border-color: $primary;
+		color: $white;
+		cursor: pointer;
+		&:active,
+		&:focus,
+		&:hover {
+			background-color: $primary-light !important;
+		}
+	}
+	&.btn-secondary {
+		background-color: $secondary;
+	}
+	&.btn-cart {
+		width: 15rem;
+		padding:0 1rem;
+		background-color: #293842;
+		border-color: #696B6C;
+		color: #9FA4A7;
+		font-size: 1.2rem;
+		line-height: 3.2rem;
+	}
+	&.btn-added {
+		width: 15rem;
+		padding:0 1rem;
+		background-color: #1E6595;
+		border-color: #1E6595;
+		color: $white;
+		font-size: 1.2rem;
+		line-height: 3.2rem;
+		i {
+			color: #39B54A;
+		}
+	}
+	&.btn-disabled {
+		background-color: #A3A3A3!important;
+		color: #696B6C!important;
+		cursor: not-allowed;
+		border-color: #A3A3A3!important;
+	}
+	&.btn-cancel {
+		background-color: $secondary;
+		color: $white;
+		border-color: $white;
+	}
+	&.btn-green {
+		background-color: #16A15E;
+		color: $white;
+	}
+	&.btn-success {
+		background-color: $success;
+	}
+	&.btn-tertiary {
+		background-color: $tertiary;
+		color: $white;
+	}
+	&.btn-confirm {
+		background-color: #CE8500;
+		color: $white;
+	}
+
+	&.btn-outline-primary {
+		background-color: transparent;
+		border: $primary solid 1px;
+		color: $primary;
+		&:hover,
+		&:active {
+			background-color: $primary!important;
+			color: $white;
+			border-color: $primary!important;
+			@include prefix(box-shadow, none!important, moz webkit ms);
+		}
+		&:focus {
+			background-color: $primary-dark!important;
+			color: $white;
+			@include prefix(box-shadow, none!important, moz webkit ms);
+		}
+	}
+	&.btn-outline{
+		background-color: transparent;
+		border: transparent;
+		box-shadow: none;
+		color: $white;
+		&:hover,
+		&:active {
+			background-color: $primary!important;
+			color: $white;
+			border-color: $primary!important;
+			@include prefix(box-shadow, none!important, moz webkit ms);
+		}
+	}
+	&.btn-outline-tertiary {
+		background-color: transparent;
+		border: $tertiary solid 1px;
+		color: $tertiary;
+		&:hover,
+		&:active {
+			background-color: $tertiary!important;
+			color: $white;
+			border-color: $tertiary!important;
+			@include prefix(box-shadow, none!important, moz webkit ms);
+		}
+		&:focus {
+			background-color: $tertiary!important;
+			color: $white;
+			@include prefix(box-shadow, none!important, moz webkit ms);
+		}
+	}
+	
+	&.btn-outline-secondary {
+		background-color: transparent;
+		border: $primary solid 0.2rem;
+		color: $primary;
+	}
+	
+	&.btn-outline-white {
+		background-color: transparent;
+		border: $white solid 0.1rem;
+		color: $white;
+		&:hover,
+		&:active {
+			border-color: $primary!important;
+		}
+	}
+	&.btn-outline-blue {
+		background-color: transparent;
+		border-color: $primary;
+		color:#fff;
+	}
+	
+	&.btn-white {
+		background-color: $white;
+	}
+	&.btn-gray {
+		background-color: #636363;
+		color: $white;
+	}
+	&.btn-gray-light {
+		background-color: #EBECEF;
+		color: $heading-color;
+	}
+
+	&.time-slot-btn {
+		border: #ECECEC solid 1px !important;
+		font-family: $font-primary;
+		@include prefix(border-radius, 0.5rem, moz webkit ms);
+		@include prefix(box-shadow, 0 0.3rem 1rem rgba($color: #777, $alpha: 0.16) !important, moz webkit ms);
+		padding: 1.2rem 1.5rem;
+	}
+	
+	// social btns
+	&.btn-social {
+		width: 100%;
+		font-size: 1.4rem;
+		display: block;
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		.socialIcon {
+			width: 2.5rem;
+		}
+	}
+
+	&.btn-fb {
+		background-color: #39579B;
+		color: $white;
+		
+	}
+	&.btn-apple {
+		background-color: #1E1F20;
+		color: $white;
+		
+	}
+	&.btn-google {
+		background-color: transparent;
+		color: #1E1F20;
+		border: #ddd solid 0.2rem;
+	}
+
+	&.btn-outline-gray {
+		background-color: transparent;
+		border: #e7e7e7 solid 1px;
+		color: $white;
+		&.dark {
+			border-color: #7c7c7c;
+		}
+	}
+
+	&.btn-outline-secondary {
+		background-color: transparent;
+		border: $secondary solid 1px;
+		color: $secondary;
+		&.white {
+			background-color: $white;
+		}
+
+		&:focus,
+		&:hover {
+			background-color: $secondary;
+			color: $white;
+		}
+	}
+	
+	
+	
+
+	&.bdp {
+		border: $primary solid 1px !important;
+	}
+	
+}
+
+.iconx {
+	$size: 3rem;
+	width: $size;
+	height: $size;
+	@include flexContenCenterInline;
+	@include noBdrBgOline;
+	@include prefix(border-radius, 50%, moz webkit ms);
+
+	&.editerBtn {
+		border: #ddd solid 1px;
+		$size: 3.2rem;
+		width: $size;
+		height: $size;
+		padding: 0;
+		img {
+			opacity: 0.6;
+		}
+
+		&.active {
+			background: $primary-light;
+			border-color: $primary-light;
+			img {
+				opacity: 1;
+			}
+		}
+	}
+
+	&.closeOption{
+		width: 2.5rem;
+		height: 2.5rem;
+		padding-top: 0.2rem;
+		border:0;
+		font-size: 1.3rem;
+		font-family: $font-primary;
+		color: $primary;
+		box-shadow: 0 0rem 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
+
+		&.detailIcon {
+			$size: 3.2rem;
+			width: $size;
+			height: $size;
+			background: url('#{$base-image-path}/delete-icon.svg') center center no-repeat;
+			position: absolute;
+			right: 0;
+			top: 1.5rem;
+			box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.07);
+		}
+	}
+	
+}
+
+.skip-container {
+	position: absolute;
+	top: 3rem;
+	right: 3rem;
+	@media (max-width:$tablet) {
+		text-align: center;
+		width: 100%;
+		position: static;
+		padding: 1.5rem 0;
+	}
+}
+
+.skipBtn {
+	width: 10rem;
+	font-size: 1.6rem;
+	color: $secondary;
+	background: $white;
+	font-size: 1.6rem;
+	border: $primary solid 1px;
+	padding: 0.5rem 1rem;
+	font-weight: $weight-bold;
+	@include btnShadow;
+	@include prefix(border-radius, 3rem, moz webkit ms);
+}
+
+
+.back-aro {
+	$size: 4.6rem;
+	width: $size;
+	height: $size;
+	background: url('#{$base-image-path}/back-aro.svg') center center no-repeat;
+	position: absolute;
+	left: 3rem;
+	top: 3rem;
+	border: #E4DDDD solid 1px;
+	@include prefix(border-radius, 50%, moz webkit ms);
+	@include cardShadow;
+
+	@media (max-width:$tablet) {
+		border: none;
+		@include shadowNone;
+		left: 0.5rem;
+		top: 0.5rem;
+	}
+}
+
+.back-to-page-head {
+	padding: 2rem 1rem 1rem 1rem;
+	.container {
+		display: flex;
+		align-items: center;
+	}
+	@media (max-width:$tablet) {
+		background: $white;
+        @include prefix(border-radius, 0 0 2rem 2rem, moz webkit ms);
+        padding: 3rem 2rem 3rem 2rem;
+	}
+	&__title {
+		font-size: $big-font-size;
+		font-weight: $weight-extrabold;
+		margin-left: 1rem;
+	}
+}
+
+.back-aro-desktop {
+	$size: 4.6rem;
+	width: $size;
+	height: $size;
+	background: url('#{$base-image-path}/back-aro.svg') center center no-repeat;
+	border: #E4DDDD solid 1px;
+	@include prefix(border-radius, 50%, moz webkit ms);
+	@include cardShadow;
+	display: inline-block;
+}
+
+.clear-search {
+	$size: 3rem;
+	width: $size;
+	height: $size;
+	background: url('#{$base-image-path}/sprite.svg') -18rem 0 no-repeat;
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+	border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+

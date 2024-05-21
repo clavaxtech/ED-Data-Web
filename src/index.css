@@ -1,0 +1,45 @@
+@import "https://js.arcgis.com/4.27/@arcgis/core/assets/esri/themes/dark/main.css";
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+.pac-container:after {
+    /* Disclaimer: not needed to show 'powered by Google' if also a Google Map is shown */
+
+    background-image: none !important;
+    height: 0px;
+}
+.ResizableBlock {
+    border: 1px solid black;
+    position: relative;
+}
+.lorem {
+    position: relative;
+}
+.Draggable {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translate(-50%, -50%);
+    background: red;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    cursor: col-resize;
+    height: 200px;
+    width: 10px;
+    z-index: 999;
+}
+.aboutBlock {
+    display: flex;
+}

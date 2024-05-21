@@ -1,0 +1,62 @@
+.lineChart {
+  /* width: 100%; */
+  /* padding-left: 5%; */
+  /* margin-right: 5%; */
+}
+.lineChart .mainChart{
+  /* margin-left: 45px; */
+
+}
+.lineChart svg {
+  overflow: inherit;
+  padding: 10px 0px 0px 45px;
+}
+
+  
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #696B6C;
+    shape-rendering: crispEdges;
+    stroke-width:0.3px;
+  }
+ 
+  
+  .brush .extent {
+    stroke: #fff;
+    fill-opacity: 0.125;
+    shape-rendering: crispEdges;
+  }
+  
+  .line {
+    fill: none;
+  }
+  
+  .tick text{
+    color: #fff;
+  }
+
+  
+
+  .axis2 .tick line{
+    color: #fff;
+  }
+  .x.axis path {
+    stroke: #696B6C;
+  }
+  .y.axis {
+    fill:none;
+    color: none;
+  }
+  .y.axis .domain {
+    stroke: #1f2d38;
+  }
+  .grid {
+    color:#1f2d38;
+  }
+  .x.axis2 .domain {
+    stroke: #696B6C;
+  }
+  .x.axis2 .tick line{
+    stroke: #696B6C;
+  }

@@ -1,0 +1,139 @@
+.main-container {
+    .container {
+        @media (max-width:$tablet){
+            padding: 0 1.5rem;
+        }
+    }
+    .unlock-content {
+        text-align: center;
+        padding: 7.5rem 0;
+        @media (max-width:$desktop_xxl) {
+            padding: 5rem 0;
+        }
+        @media (max-width:$tablet) {
+            padding: 3rem 0;
+        }
+        @media (max-width:$mobileBig) {
+            padding: 2rem 0 2rem 0;
+        }
+        h1 {
+            font-size: 8rem;
+            line-height: 8rem;
+            color: $white;
+            margin-bottom: 4rem;
+            font-weight: $weight-regular;
+            @media (max-width:$desktop-xl) {
+                font-size: 6rem;
+                line-height: 6rem;
+            }
+            @media (max-width:$desktop) {
+                font-size: 4.5rem;
+                line-height: 5rem;
+            }
+            @media (max-width:$tablet) {
+                font-size: 3.5rem;
+                line-height: 4rem;
+            }
+            @media (max-width:$mobileBig) {
+                font-size: 2.5rem;
+                line-height: 3rem;
+            }
+            span {
+                display: inline-block;
+                color: $primary;
+            }
+        }
+        .btn {
+            font-size: 1.8rem;
+            // font-weight: $weight-semibold;
+            font-family: $font-secondary;
+            @include prefix(border-radius, 1rem, moz webkit ms);
+        }
+    }
+    .text-block-cont {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto 2rem auto;
+        @media (max-width:$tablet) {
+            width: 100%;
+        }
+        p {
+            color: $white;
+            font-size: 2rem;
+            margin: 0;
+        }
+    }
+    .teaser-bottom {
+        padding: 25.2rem 0 15.8rem 0;
+        background: url('#{$base-image-path}/teaser-bottom-bg.svg') 0 0 no-repeat;
+        background-size: 100%;       
+        @media (min-width:$desktop_xl) {
+            padding: 25.2rem 0 30.8rem 0;
+        }
+        @media (max-width:$desktop) {
+            padding: 16.2rem 0 10.8rem 0;
+        }
+        @media (max-width:$tablet) {
+            padding: 12rem 0 8.8rem 0;
+        }
+        
+    }
+    .viewData-container {
+        display: none;
+        padding: 25.2rem 0 12.8rem 0;
+        background: url('#{$base-image-path}/teaser-bottom-bg.svg') 0 0 no-repeat;
+        background-size: 100%;
+        @media (min-width:$desktop-xl) {
+            height: calc(100vh - 400px);
+        }
+        @media (max-width:$desktop-xl) {
+            padding: 20.2rem 0 8.8rem 0;
+        }
+        @media (max-width:$desktop) {
+            padding: 16.2rem 0 6.8rem 0;
+        }
+        @media (max-width:$tablet) {
+            padding: 12rem 0 4.8rem 0;
+        }
+        @media (max-width:$mobileBig) {
+            padding: 8.2rem 0 2.8rem 0;
+        }
+        .bottom-text-content {
+            text-align: center;
+            width: 54%; 
+            margin: 0 auto;
+            @media (max-width:$desktop-xl) {
+                width: 60%; 
+            }
+            @media (max-width:$desktop) {
+                width: 63%; 
+            }
+            @media (max-width:$tablet) {
+                width: 80%;
+            }
+            @media (max-width:$mobileBig) {
+                width: 100%;
+            }
+            p {
+                color: $white;
+                font-family: $font-secondary;
+                font-size: 2rem;
+                line-height: 3rem;
+                margin: 0 0 2rem 0;
+                @media (max-width:$desktop-xl) {
+                    margin: 0 0 1rem 0;
+                }
+                @media (max-width:$desktop) {
+                    font-size: 1.8rem;
+                    line-height: 2.4rem;
+                }
+                @media (max-width:$mobileBig) {
+                    font-size: 1.6rem;
+                    line-height: 2.6rem;
+                    margin-bottom: 2rem;
+                }
+                
+            }
+        }
+    }
+}
