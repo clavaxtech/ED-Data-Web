@@ -34,6 +34,9 @@ Launches the test runner in the interactive watch mode.
 
 ## Production 
 
+
+appsec is working 
+
 ### `yarn run build`
 
 Builds the app for production to the `build` folder.\
