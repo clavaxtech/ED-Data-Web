@@ -2,4 +2,4 @@
  os: linux
  files:
    - source: /
-     destination: /home/data-web/ED-Data-Web 
+     destination: /home/data-web/ED-Data-Web/ 
