@@ -3,3 +3,5 @@
  files:
    - source: /
      destination: /home/data-web/ED-Data-Web/ 
+ file_exists_behavior: OVERWRITE
+ 
